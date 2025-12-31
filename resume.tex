@@ -3,10 +3,10 @@
 % Packages:
 \usepackage[
     ignoreheadfoot, % set margins without considering header and footer
-    top=1.2 cm, % seperation between body and page edge from the top
-    bottom=1.2 cm, % seperation between body and page edge from the bottom
-    left=1.2 cm, % seperation between body and page edge from the left
-    right=1.2 cm, % seperation between body and page edge from the right
+    top=1.4 cm, % seperation between body and page edge from the top
+    bottom=1.4 cm, % seperation between body and page edge from the bottom
+    left=1.4 cm, % seperation between body and page edge from the left
+    right=1.4 cm, % seperation between body and page edge from the right
     footskip=1.0 cm, % seperation between body and footer
     % showframe % for debugging 
 ]{geometry} % for adjusting page geometry
@@ -45,7 +45,6 @@
     \usepackage{lmodern}
 \fi
 
-\usepackage{charter}
 
 % Some settings:
 \raggedright
@@ -61,7 +60,7 @@
 
 \titlespacing{\section}{
     % left space:
-    -1pt
+    0pt
 }{
     % top space:
     0.3 cm
@@ -130,21 +129,11 @@
 } % new environment for three column entries
 
 \newenvironment{header}{
-    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.2}
 }{
     \par\kern\topsep
 } % new environment for the header
 
-\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
-  \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
-    \put(
-        \LenToUnit{\paperwidth-2 cm-0 cm+0.05cm},
-        \LenToUnit{\paperheight-1.0 cm}
-    ){\vtop{{\null}\makebox[0pt][c]{
-        \small\color{gray}\textit{Last updated in September 2024}\hspace{\widthof{Last updated in September 2024}}
-    }}}%
-  }%
-}%
 
 % save the original href command in a new command:
 \let\hrefWithoutArrow\href
@@ -153,147 +142,147 @@
 
 
 \begin{document}
-    \newcommand{\AND}{\unskip
-        \cleaders\copy\ANDbox\hskip\wd\ANDbox
-        \ignorespaces
-    }
-    \newsavebox\ANDbox
-    \sbox\ANDbox{$|$}
+\newcommand{\AND}{\unskip
+    \cleaders\copy\ANDbox\hskip\wd\ANDbox
+    \ignorespaces
+}
+\newsavebox\ANDbox
+\sbox\ANDbox{$|$}
 
-    \begin{header}
-        \fontsize{24 pt}{24 pt}\selectfont Kaushik Goswami
+\begin{header}
+    \fontsize{24 pt}{24 pt}\selectfont Kaushik Goswami
 
-        \vspace{5 pt}
+    \vspace{5 pt}
 
-        \normalsize
-        \mbox{Bhavnagar, Gujarat}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{mailto:goswamikaushik2003@gmail.com}{goswamikaushik2003@gmail.com}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{tel:+919510614115}{+919510614115}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{https://kaushik-portfolio-opal.vercel.app/}{kaushik-portfolio-opal.vercel.app}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{https://linkedin.com/in/goswamikaushik}{linkedin.com/in/goswamikaushik}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{https://github.com/goswamikaushik}{github.com/goswamikaushik}}%
-    \end{header}
+    \normalsize
+    \mbox{Bhavnagar, Gujarat}%
+    \kern 5.0 pt%
+    \AND%
+    \kern 5.0 pt%
+    \mbox{\hrefWithoutArrow{mailto:goswamikaushik2003@gmail.com}{goswamikaushik2003@gmail.com}}%
+    \kern 5.0 pt%
+    \AND%
+    \kern 5.0 pt%
+    \mbox{\hrefWithoutArrow{tel:+919510614115}{+919510614115}}%
+    \kern 5.0 pt%
+    \AND%
+    \kern 5.0 pt%
+    \mbox{\hrefWithoutArrow{https://kaushik-portfolio-opal.vercel.app/}{kaushik-portfolio-opal.vercel.app}}%
+    \kern 5.0 pt%
+    \AND%
+    \kern 5.0 pt%
+    \mbox{\hrefWithoutArrow{https://linkedin.com/in/goswamikaushik}{linkedin.com/in/goswamikaushik}}%
+    \kern 5.0 pt%
+    \AND%
+    \kern 5.0 pt%
+    \mbox{\hrefWithoutArrow{https://github.com/goswamikaushik}{github.com/goswamikaushik}}%
+\end{header}
 
-    \vspace{5 pt - 0.3 cm}
+\vspace{5 pt - 0.3 cm}
 
-    \section{SUMMARY}
-        \begin{onecolentry}
-Frontend Engineer with hands-on experience building production-grade, scalable web interfaces using React and Next.js across Fintech and Healthcare products. Strong foundation in JavaScript and TypeScript, with a focus on performance, accessibility, and maintainable UI architecture. Experienced in integrating frontend systems with AI-powered services and backend APIs to deliver reliable, user-centric features in live production environments.
-        \end{onecolentry}
+\section{SUMMARY}
+\begin{onecolentry}
+    Frontend Engineer with hands-on experience building production-grade, scalable web interfaces using React and Next.js across Fintech and Healthcare products. Strong foundation in JavaScript and TypeScript, with a focus on performance, accessibility, and maintainable UI architecture. Experienced in integrating frontend systems with AI-powered services and backend APIs to deliver reliable, user-centric features in live production environments.
+\end{onecolentry}
 
-          
-   \section{EXPERIENCE}
+
+\section{EXPERIENCE}
 
 \begin{twocolentry}{
-    Jan 2024 – Present
-}
+        Jan 2024 – Present
+    }
     \textbf{Sattvabit} – Surat, Gujarat
 \end{twocolentry}
 
 \vspace{0.10 cm}
 \begin{onecolentry}
 
-\textit{Frontend Engineer} (Jul 2025 – Present)
-\begin{highlights}
-    \item Built a real-time paper trading simulator, enabling users to simulate trades within a fintech analytics platform through a highly interactive, state-driven frontend.
-    \item Owned frontend development for an AI-powered Trading Coach, delivering scalable and user-friendly interfaces using React and Next.js.
-    \item Implemented advanced UI workflows including threaded conversations, auto-titling, chronological sorting, and smooth scrolling, improving usability and decision-making efficiency.
-    \item Integrated frontend systems with backend APIs to support domain-specific queries and trading chart uploads (images, PDFs).
-    \item Collaborated cross-functionally with product managers, designers, and senior engineers to translate complex requirements into production-ready features used in live environments.
+    \textit{Frontend Engineer} (Jul 2025 – Present)
+    \begin{highlights}
+        \item Built a real-time paper trading simulator, enabling users to simulate trades within a fintech analytics platform through a highly interactive, state-driven frontend.
+        \item Owned frontend development for an AI-powered Trading Coach, delivering scalable and user-friendly interfaces using React and Next.js.
+        \item Implemented advanced UI workflows including threaded conversations, auto-titling, chronological sorting, and smooth scrolling, improving usability and decision-making efficiency.
+        \item Integrated frontend systems with backend APIs to support domain-specific queries and trading chart uploads (images, PDFs).
+        \item Collaborated cross-functionally with product managers, designers, and senior engineers to translate complex requirements into production-ready features used in live environments.
 
-\end{highlights}
+    \end{highlights}
+
+    \vspace{0.13 cm}
+
+    \textit{Frontend Developer} (Jul 2024 – Jun 2025)
+    \begin{highlights}
+        \item Led frontend development for a multi-tenant EMR (Healthcare) platform, building scalable and modular interfaces using React and Electron, with a strong focus on usability and maintainability.
+        \item Implemented complex UI features, including real-time chat interfaces, AI-assisted suggestions, and audio recording workflows, supporting real-world clinical use cases.
+        \item Modernized a legacy B2B commerce interface by translating Figma designs into a reusable component system using React and Tailwind CSS, improving UI consistency and enterprise workflow alignment.
+        \item Delivered responsive and accessible user interfaces for a Fintech Trading Analytics Platform, supporting thousands of users across core dashboards and data views.
+        \item Improved the company website’s visibility by adding a portfolio section and applying technical SEO enhancements such as canonical URLs and structured metadata.
+        \item Contributed to internal tooling, including a Slack bot integrated with AI-driven workflows to enable real-time messaging.
+
+
+    \end{highlights}
+
+    \vspace{0.13 cm}
+
+    \textit{Frontend Developer Intern} (Jan 2024 – Jun 2024)
+    \begin{highlights}
+        \item Completed hands-on training in React fundamentals, including components, hooks, Redux, and client-side state persistence using localStorage.
+        \item Built and maintained a Todo application using React and Redux to demonstrate state management and component-driven UI development.
+        \item Contributed to a Fintech Trading Analytics Platform by implementing UI features using existing boilerplate templates and collaborating with cross-functional teams.
+        \item Developed responsive UI components, including forms and dynamic tables, using Next UI, gaining practical exposure to Next.js routing and layout systems.
+
+    \end{highlights}
+\end{onecolentry}
+\section{EDUCATION}
+\begin{twocolentry}{
+        Nov 2020 – Jan 2024
+    }
+    \textbf{Sardar Vallabhbhai Patel Institute of Technology}, B.E. in Computer Engineering\end{twocolentry}
+
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item CGPA : 8.33 / 10
+    \end{highlights}
+\end{onecolentry}
+
+
+\section{PROJECTS}
+\begin{twocolentry}{
+        % \href{https://aitoolocean.com/}{aitoolocean.com}
+    }
+    \textbf{AiToolOcean – Curated AI Tools Discovery Platform}\end{twocolentry}
+
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Designed and developed a modern AI tools listing platform using Next.js, TypeScript, Strapi CMS, and Tailwind CSS.
+        \item Implemented server-side rendering (SSR) and technical SEO strategies to boost performance, indexing, and discoverability.
+        \item Deployed the platform on AWS Amplify with S3, delivering scalable hosting. Achieved 30,000+ organic impressions.
+    \end{highlights}
+\end{onecolentry}
 
 \vspace{0.13 cm}
+\begin{twocolentry}{
+        \href{https://aevum-ai.vercel.app/}{AevumAi}
+    }
+    \textbf{AevumAi – Template-Driven Email Outreach Tool}\end{twocolentry}
 
-\textit{Frontend Developer} (Jul 2024 – Jun 2025)
-\begin{highlights}
-\item Led frontend development for a multi-tenant EMR (Healthcare) platform, building scalable and modular interfaces using React and Electron, with a strong focus on usability and maintainability.
-\item Implemented complex UI features, including real-time chat interfaces, AI-assisted suggestions, and audio recording workflows, supporting real-world clinical use cases.
-\item Modernized a legacy B2B commerce interface by translating Figma designs into a reusable component system using React and Tailwind CSS, improving UI consistency and enterprise workflow alignment.
-\item Delivered responsive and accessible user interfaces for a Fintech Trading Analytics Platform, supporting thousands of users across core dashboards and data views.
-\item Improved the company website’s visibility by adding a portfolio section and applying technical SEO enhancements such as canonical URLs and structured metadata.
-\item Contributed to internal tooling, including a Slack bot integrated with AI-driven workflows to enable real-time messaging.
-
-  
-\end{highlights}
-
-\vspace{0.13 cm}
-
-\textit{Frontend Developer Intern} (Jan 2024 – Jun 2024)
-\begin{highlights}
-\item Completed hands-on training in React fundamentals, including components, hooks, Redux, and client-side state persistence using localStorage.
-\item Built and maintained a Todo application using React and Redux to demonstrate state management and component-driven UI development.
-\item Contributed to a Fintech Trading Analytics Platform by implementing UI features using existing boilerplate templates and collaborating with cross-functional teams.
-\item Developed responsive UI components, including forms and dynamic tables, using Next UI, gaining practical exposure to Next.js routing and layout systems.
-
-\end{highlights}
-\end{onecolentry}    
-     \section{EDUCATION}
-        \begin{twocolentry}{
-            Nov 2020 – Jan 2024
-        }
-            \textbf{Sardar Vallabhbhai Patel Institute of Technology}, B.E. in Computer Engineering\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item CGPA : 8.33 / 10
-            \end{highlights}
-        \end{onecolentry}
-
-    
-    \section{PROJECTS}
-        \begin{twocolentry}{
-            % \href{https://aitoolocean.com/}{aitoolocean.com}
-        }
-            \textbf{AiToolOcean – Curated AI Tools Discovery Platform}\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Designed and developed a modern AI tools listing platform using Next.js, TypeScript, Strapi CMS, and Tailwind CSS.
-               \item Implemented server-side rendering (SSR) and technical SEO strategies to boost performance, indexing, and discoverability.
-               \item Deployed the platform on AWS Amplify with S3, delivering scalable hosting. Achieved 30,000+ organic impressions
-            \end{highlights}
-        \end{onecolentry}
-
-        \vspace{0.13 cm}
-        \begin{twocolentry}{
-            \href{https://aevum-ai.vercel.app/}{AevumAi}
-        }
-            \textbf{AevumAi – Template-Driven Email Outreach Tool}\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-\item Designed and developed a resume handling and email outreach tool to streamline job application workflows through a clean, user-friendly web interface.
-\item Implemented reusable and editable email templates with support for dynamic variables (e.g., company name, recruiter/HR name, role) to enable personalized messaging at scale.
-\item Built functionality to send emails to multiple recipients simultaneously while preserving per-recipient personalization and template integrity.
-\item Developed structured input flows for managing resume data, recipient details, and message content
-            \end{highlights}
-        \end{onecolentry}
-    \section{SKILLS} 
-        \begin{onecolentry}
-          \textbf{Languages:} JavaScript, TypeScript, HTML, CSS \\
-          \textbf{Libraries \& Frameworks:} React.js, Next.js, Redux Toolkit \& RTK Query, Tailwind CSS \\
-          \textbf{Tools \& Platforms:} Git, GitHub, Vite.js, VS Code \\
-          \textbf{Performance \& SEO:} Server-Side Rendering (SSR), Technical SEO, Responsive Design, Core Web Vitals \\
-          \textbf{Engineering Practices:} Component-driven architecture, DRY \& SRP Principles, Clean code
-        \end{onecolentry}
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Designed and developed a resume handling and email outreach tool to streamline job application workflows through a clean, user-friendly web interface.
+        \item Implemented reusable and editable email templates with support for dynamic variables (e.g., company name, recruiter/HR name, role) to enable personalized messaging at scale.
+        \item Built functionality to send emails to multiple recipients simultaneously while preserving per-recipient personalization and template integrity.
+        \item Developed structured input flows for managing resume data, recipient details, and message content.
+    \end{highlights}
+\end{onecolentry}
+\section{SKILLS}
+\begin{onecolentry}
+    \textbf{Languages:} JavaScript, TypeScript, HTML, CSS \\
+    \textbf{Libraries \& Frameworks:} React.js, Next.js, Redux Toolkit \& RTK Query, Tailwind CSS \\
+    \textbf{Tools \& Platforms:} Git, GitHub, Vite.js, VS Code \\
+    \textbf{Performance \& SEO:} Server-Side Rendering (SSR), Technical SEO, Responsive Design, Core Web Vitals \\
+    \textbf{Engineering Practices:} Component-driven architecture, Clean Code, DRY, SRP
+\end{onecolentry}
 
 \end{document}
