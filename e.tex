@@ -198,31 +198,28 @@
 
     \textit{Software Engineer} (Jul 2025 - Present)
     \begin{highlights}
-        \item Led development of an AI-powered Trading Coach using React and Next.js, implementing conversational and data-driven workflows for production users.
-        \item Integrated the client application with backend services to support domain queries and file uploads (images, PDFs), handling client-server communication and collaborating with product, design, and engineering teams to deliver deployable features.
-        \item Developed user onboarding and account integration flows enabling users to connect external trading platforms, import historical trades, and automatically synchronize trade activity upon login.
-        \item Built a backtesting (paper trading) system supporting configurable sessions (capital, interval, and date range) and streamed market candle data via WebSockets, integrating third-party market data providers to simulate trading strategies.
-
+        \item Developed an AI-powered Trading Coach end-to-end (React, Next.js, NestJS, PostgreSQL/Prisma) — built the chat UI, integrated OpenAI Assistants API with multi-format file upload support (PDF, images), and designed the backend APIs and database schema to deliver a conversational trading Q\&A experience in production.
+        \item Built full-stack account integration flows (React, NestJS, PostgreSQL) enabling traders to connect broker accounts, auto-sync trades on login or on-demand, and import historical trade data via Excel exports — implementing frontend forms, backend APIs, and database schema end-to-end.
+        \item Built a full-stack backtesting system end-to-end (React, NestJS, PostgreSQL, WebSockets) — developed session configuration forms (market, symbol, exchange, date range), a real-time chart UI using TradingView Lightweight Charts with historical candle replay, speed control, and step-forward/backward navigation, plus live buy/sell execution with stop-loss, take-profit, and automatic P\&L calculation, integrating Databento and Twelve Data APIs across 4 asset classes (forex, crypto, commodities, common stocks).
     \end{highlights}
 
     \vspace{0.10 cm}
 
     \textit{Frontend Developer} (Jul 2024 - Jun 2025)
     \begin{highlights}
-        \item Developed modular interfaces for a multi-tenant healthcare (EMR) platform using React and Electron, implementing real-time chat, AI-assisted suggestions, and audio recording workflows for clinical use cases.
-        \item Built reusable component systems from Figma designs and modernized a legacy B2B commerce interface using React and Tailwind CSS, improving consistency and maintainability across enterprise workflows.
-        \item Delivered production dashboards and data views for a fintech trading analytics platform used by large user bases, focusing on responsiveness and reliability.
-        \item Contributed to internal tools and platform improvements, including an AI-assisted Slack bot for real-time messaging and technical SEO enhancements to improve website indexing and visibility.
+        \item Built full-stack features for a multi-tenant healthcare EMR platform (React, Electron, NestJS, PostgreSQL) — including patient records/forms, doctor note workflows with audio recording, AI-assisted clinical text suggestions via OpenAI API, and real-time staff chat via WebSockets.
+        \item Delivered production dashboards and data views for an enterprise fintech trading journal platform (5,000+ users), building 15+ reusable React components from Figma designs with responsive layouts across complex data workflows.
+        \item Modernized a legacy B2B commerce interface by replacing inconsistent UI patterns with a structured Tailwind CSS component system, improving maintainability across enterprise workflows.
+        \item Built an internal AI Slack bot using Bolt.js and OpenAI API — configured the Slack app, handled mention-triggered responses in threads, and added a daily good morning message to the team channel.
     \end{highlights}
 
     \vspace{0.10 cm}
 
     \textit{Frontend Developer Intern} (Jan 2024 - Jun 2024)
     \begin{highlights}
-        \item Learned core React concepts including components, hooks, Redux state management, and client-side persistence (localStorage) while working within an existing production codebase.
-        \item Built and maintained UI components and a sample Todo application using React and Redux to strengthen component-driven development and state handling.
-        \item Implemented responsive UI components (forms, tables) for a fintech trading platform with Next.js routing and layouts.
-
+        \item Contributed to a production fintech trading journal platform from its early stages, building responsive trade entry forms, filter forms, and trade history tables using React and Next.js routing and layouts.
+        \item Built dashboard and chart components integrated with backend APIs, applying Redux Toolkit for trade data state management within the live production codebase.
+        \item Set up reusable component structure and responsive design patterns (mobile/tablet) adopted as the platform's frontend foundation as the team scaled.
     \end{highlights}
 \end{onecolentry}
 
@@ -249,18 +246,20 @@
 \vspace{0.10 cm}
 \begin{onecolentry}
     \begin{highlights}
-        \item Built a web-based job application outreach tool to manage resumes and streamline application workflows via an interface.
-        \item Implemented reusable email templates with dynamic variables (company, role) to enable personalized messaging at scale.
-        \item Developed a bulk email workflow supporting recipients while preserving per-recipient customization and template integrity.
+        \item Built a full-stack job outreach platform (Next.js, TypeScript, Tailwind CSS, Supabase) with Google OAuth authentication, enabling job seekers to manage resumes and send personalized outreach emails at scale.
+        \item Engineered a bulk email dispatch system supporting 200–500 recipients per campaign, dynamically injecting per-recipient variables (company, role) while maintaining template consistency across all sends.
+        \item Implemented reusable email templates with dynamic variables and a resume management interface to streamline the job application workflow end-to-end.
     \end{highlights}
 \end{onecolentry}
 
 \section{SKILLS}
 \begin{onecolentry}
     \textbf{Languages:} JavaScript, TypeScript, HTML, CSS \\
-    \textbf{Libraries \& Frameworks:} React.js, Next.js, Nest.js Redux Toolkit \& RTK Query, Tailwind CSS \\
-    \textbf{Tools \& Platforms:} Git, GitHub, Vite.js, VS Code \\
-    \textbf{Performance \& SEO:} Server-Side Rendering (SSR), Technical SEO, Responsive Design, Core Web Vitals \\
+    \textbf{Frontend:} React.js, Next.js, Redux Toolkit \& RTK Query, Tailwind CSS \\
+    \textbf{Backend:} NestJS, PostgreSQL, REST APIs, WebSockets \\
+    \textbf{Tools:} Figma, Postman, Vite.js \\
+    \textbf{Testing:} Jest, React Testing Library \\
+    \textbf{Concepts:} Server-Side Rendering (SSR), Responsive Design, Core Web Vitals, Technical SEO \\
 \end{onecolentry}
 
 \end{document}
