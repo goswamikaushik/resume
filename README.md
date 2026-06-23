@@ -1,5 +1,7 @@
 # 📄 ATS-Optimized LaTeX Resume Template
 
+📄 **[View Resume (PDF)](./Kaushik-Goswami-Resume.pdf)**
+
 A clean, professional, and **ATS-friendly (Applicant Tracking System)** resume template built using LaTeX. This repository is designed to help developers manage their resumes with version control, separation of content and styling, and automated builds.
 
 This is the repository I use to manage my own resume, and it's structured so that **any developer can fork, customize, and compile their own version in minutes**.
