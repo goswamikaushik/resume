@@ -1,8 +1,8 @@
-# 📄 ATS-Optimized LaTeX Resume Template
+# 📄 LaTeX Resume Template
 
 📄 **[View Resume (PDF)](./Kaushik-Goswami-Resume.pdf)**
 
-A clean, professional, and **ATS-friendly (Applicant Tracking System)** resume template built using LaTeX. This repository is designed to help developers manage their resumes with version control, separation of content and styling, and automated builds.
+A clean, professional resume template built using LaTeX. This repository is designed to help developers manage their resumes with version control, separation of content and styling, and automated builds.
 
 This is the repository I use to manage my own resume, and it's structured so that **any developer can fork, customize, and compile their own version in minutes**.
 
@@ -10,7 +10,7 @@ This is the repository I use to manage my own resume, and it's structured so tha
 
 ## ✨ Features
 
-- **ATS-Friendly:** Specifically configured to output machine-readable, parsable text (`glyphtounicode` mapping, standard fonts).
+- **Machine-Readable:** Uses standard fonts and mappings (`glyphtounicode`) so text can be copied and parsed easily. You can verify your output using checkers like the [FAANG Tech Leads Resume Review](https://www.faangtechleads.com/resume/review).
 - **Live Preview (Watch Mode):** Recompiles automatically on save so you can see your changes instantly.
 - **Version Controlled:** Treat your resume like code—track changes, create branches, and maintain a history of your career growth.
 - **Separation of Concerns:** Content is managed via clean LaTeX markup, letting the engine handle page margins, alignment, and formatting automatically.
