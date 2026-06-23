@@ -1,99 +1,110 @@
-# Kaushik Goswami — Resume (LaTeX)
+# 📄 ATS-Optimized LaTeX Resume Template
 
-📄 **[View Resume (PDF)](./Kaushik-Goswami-Resume.pdf)**
+A clean, professional, and **ATS-friendly (Applicant Tracking System)** resume template built using LaTeX. This repository is designed to help developers manage their resumes with version control, separation of content and styling, and automated builds.
 
-This repository contains my **latest professional resume**, authored in **LaTeX** and compiled to PDF.  
-The resume is **ATS-friendly**, machine-readable, and optimized for **Frontend / Full-Stack Engineering roles**.
-
-LaTeX dependencies are managed at the **system level via TeX Live**.  
-This project does **not** use npm, Node.js, or any JavaScript-based tooling.
+This is the repository I use to manage my own resume, and it's structured so that **any developer can fork, customize, and compile their own version in minutes**.
 
 ---
 
-# Kaushik Goswami — LaTeX Resume
+## ✨ Features
 
-This repository contains the source code for my ATS-optimized resume built using LaTeX.
-The resume is written in a `.tex` file and compiled into a PDF using the LaTeX typesetting engine.
+- **ATS-Friendly:** Specifically configured to output machine-readable, parsable text (`glyphtounicode` mapping, standard fonts).
+- **Live Preview (Watch Mode):** Recompiles automatically on save so you can see your changes instantly.
+- **Version Controlled:** Treat your resume like code—track changes, create branches, and maintain a history of your career growth.
+- **Separation of Concerns:** Content is managed via clean LaTeX markup, letting the engine handle page margins, alignment, and formatting automatically.
 
-## Tech Stack
+---
 
-- LaTeX (Article class)
-- TeX Live distribution
-- `pdflatex` (compiler)
-- `latexmk` (build automation)
+## 📁 File Structure & Output Naming
 
-## Prerequisites (Linux / Ubuntu)
+When you compile the LaTeX source, the output PDF automatically matches the filename of your `.tex` source file:
+- **Source File:** `Your-Name-Resume.tex` ➡️ **Output PDF:** `Your-Name-Resume.pdf`
 
-Install required dependencies:
+To customize this template for yourself:
+1. **Rename** the source file from `Kaushik-Goswami-Resume.tex` to your preferred filename (e.g., `Jane-Smith-Resume.tex`).
+2. Run the compile command targeting your new file name.
+3. The generated PDF will automatically match the name of your `.tex` file.
 
+---
+
+## 🚀 Getting Started
+
+### 1. Prerequisites
+
+You need a LaTeX distribution installed on your system.
+
+#### **Linux (Ubuntu/Debian)**
+Install the required TeX Live packages:
 ```bash
 sudo apt update
 sudo apt install latexmk texlive-latex-extra texlive-fonts-extra texlive-extra-utils
 ```
 
-## Development (Live Preview Mode)
+#### **macOS**
+Install MacTeX using Homebrew:
+```bash
+brew install --cask mactex-no-gui
+# Or for the full suite: brew install --cask mactex
+```
 
-Start continuous compilation (watch mode):
+#### **Windows**
+Install [MiKTeX](https://miktex.org/) or use [WSL (Windows Subsystem for Linux)](https://learn.microsoft.com/en-us/windows/wsl/install) to run the Linux commands.
+
+---
+
+### 2. Live Development (Watch Mode)
+
+To start continuous compilation where the PDF regenerates instantly whenever you save the `.tex` file, run:
 
 ```bash
-latexmk -pdf -pvc Kaushik-Goswami-Resume.tex
+latexmk -pdf -pvc <your-filename>.tex
 ```
+*(For example: `latexmk -pdf -pvc Kaushik-Goswami-Resume.tex`)*
 
-This will automatically recompile the PDF every time the `.tex` file is saved.
+This starts a file watcher. Keep this terminal open while you edit!
 
-Open the generated PDF:
+---
+
+### 3. Production Build
+
+To compile a final, optimized production PDF without starting a file watcher:
 
 ```bash
-xdg-open Kaushik-Goswami-Resume.pdf
+latexmk -pdf <your-filename>.tex
 ```
 
-Now any edit to the resume will immediately reflect in the PDF after saving.
+---
 
-## Production Build (Generate Final PDF)
+### 4. Cleaning Build Artifacts
 
-To generate the final resume:
+LaTeX compilation generates several auxiliary tracking files (`.aux`, `.log`, `.fls`, etc.). You can clean them up easily:
 
-```bash
-latexmk -pdf Kaushik-Goswami-Resume.tex
-```
+- **Remove temp files (keeps the PDF):**
+  ```bash
+  latexmk -c
+  ```
+- **Remove all generated files (including the PDF):**
+  ```bash
+  latexmk -C
+  ```
 
-Output file:
+---
 
-```
-Kaushik-Goswami-Resume.pdf
-```
+## 🛠️ Customizing the Template
 
-## Cleaning Build Files
+1. Open your renamed `.tex` file in any code editor (e.g., VS Code with the *LaTeX Workshop* extension).
+2. Customize the contact details in the `\begin{header}` block.
+3. Update your experience, education, and skills sections by modifying the corresponding `\section` blocks.
+4. Save the file, and your new PDF will be generated immediately.
 
-Remove temporary compilation files (keeps the PDF):
+---
 
-```bash
-latexmk -c
-```
+## 📬 Connect With Me
 
-Remove all generated files including the PDF:
+If you have any questions or want to connect, feel free to reach out!
 
-```bash
-latexmk -C
-```
+- 💼 **LinkedIn:** [linkedin.com/in/goswamikaushik](https://www.linkedin.com/in/goswamikaushik/)
+- 🌐 **Portfolio:** [goswamikaushik.dev](https://goswamikaushik.dev/)
+- 🐙 **GitHub:** [github.com/goswamikaushik](https://github.com/goswamikaushik)
 
-## How It Works
-
-1. The `.tex` file is the source code of the resume.
-2. The LaTeX engine (`pdflatex`) compiles it into a PDF.
-3. `latexmk` automatically runs multiple compilation passes required for:
-   - hyperlinks
-   - bookmarks
-   - page references
-
-This ensures consistent layout and ATS-readable output across different systems.
-
-## Editing
-
-All resume content is located in:
-
-```
-Kaushik-Goswami-Resume.tex
-```
-
-Edit the file, save, and the PDF will regenerate automatically in development mode.
+---
